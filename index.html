@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>options</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div>
+                    <h2 class="h1 text-center">Movies catalog</h2>
+                </div>
+                <div class="option-left col">
+
+
+                    <!-- inputs -->
+
+                    <form action="POST" enctype="https://echo.htmlacademy.ru/">
+                        <div class="input-group mb-3">
+                            <input type="text" name="all" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" name="new" class="form-control" aria-label="Username"
+                                aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option selected>All</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Rating (ligh to low)</option>
+                                <option value="1">Rating</option>
+                                <option value="2">Rating</option>
+                                <option value="3">Rating</option>
+                            </select>
+                        </div>
+
+                        <!-- inouts -->
+                        <button class="btn btn-primary w-100 mb-4" type="submit">Button</button>
+                    </form>
+                    <h3 class="h3">Bookmarked movies</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Avengers: infinity var</h6>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">The avengers</h6>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">12 Years a Slave</h6>
+                            <a href="#" class="btn btn-danger">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end off option left -->
+
+                <div class="option__right col-8 position-relative">
+                    <div class="heading">
+                        <h2 class="h5">Search results: 39</h2>
+                    </div>
+                    <div class="alert alert-primary" role="alert">Use the rom on the left to search for a movie</div>
+
+                    <div class="card__box row justify-content-around">
+                        <div class="card" style="width: 21rem;">
+                            <img src="./image/card-img1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Avengers: infinity var</h5>
+                                <p><i class="fas fa-calendar"></i> 2018</p>
+                                <p><i class="fas fa-star text-warning"></i> 8.7</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">watch trailer</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">More info</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 21rem;">
+                            <img src="./image/card-img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The avengers</h5>
+                                <p><i class="fas fa-calendar"></i> 2012</p>
+                                <p><i class="fas fa-star text-warning"></i> 8.1</p>
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">watch trailer</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">More info</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end off card -->
+                    <nav class="mt-5 position-absolute start-50 translate-middle-x"
+                        aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
